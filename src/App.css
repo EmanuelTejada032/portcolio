@@ -7,7 +7,6 @@
 
 /* Hero section */
 .hero-section{
-  width: 100vw;
   height: 92vh;
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.3);
@@ -22,4 +21,32 @@
   font-size: 2.2rem;
   z-index: 1;
 }
+
+/* About section */
+
+.about-section{
+  position: relative;
+  height: 40vh;
+  text-align: center;
+}
+
+.about-content{
+  position: relative;
+  font-size: 1.5rem;
+  top: 30%;
+  margin: 0 auto;
+  width: 60% ;
+}
+
+.about-content h2 {
+  margin: 20px;
+  letter-spacing: 3px;
+}
+
+.about-content p {
+  line-height: 1.8rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
