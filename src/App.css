@@ -4,3 +4,22 @@
   box-sizing: border-box;
   
 }
+
+/* Hero section */
+.hero-section{
+  width: 100vw;
+  height: 92vh;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+.hero-heading{
+  text-align: center;
+  position: relative;
+  color: white;
+  top: 40%;
+  font-size: 2.2rem;
+  z-index: 1;
+}
+
