@@ -1,2 +1,64 @@
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-size: 1rem;
+    color: white;
+    background-color: blueviolet;
+}
+
+h1{
+    letter-spacing: 3px;
+}
+
+.navbar-links{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 30%;
+}
+
+.navbar-links li{
+    padding: 10px 20px;
+}
+.navbar-links li:hover{
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-icon{
+    font-size: 1.2rem;
+    color: white;
+    display: none;
+    cursor: pointer; 
+    width: 40%; 
+}
+
+
+@media screen and (max-width: 992px){
+ .navbar-links{
+     width: 40%;
+ }
+}
+
+@media screen and (max-width: 768px){
+    .navbar-links{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+        padding-left: 30%;
+    }
+}
+
+
 

@@ -1,7 +1,5 @@
 import React from 'react'
 // import background from '../../img/herobgtest.jpg'
-// import bootstrapLogo from '../../img/bootstrap-4.svg'
-
 import { SvgLogos, Projects } from '../../data'
 
 const MainContent = () => {
@@ -25,7 +23,8 @@ const MainContent = () => {
                      </div>  
                    ))}
           </section>
-          <section className='projects'>   
+         </section>
+          <main className='projects'>   
               {Projects.map( (project, i) => (
                 <div key={i} className='project'>
                   <div className='project-info'>
@@ -33,7 +32,7 @@ const MainContent = () => {
                     <p>{project.description}</p>
                     <div className='tech-icons'>
                       {project.usedTech.map((icon, i) =>(
-                        <p className='tech-icon'>this is a tech icon</p>
+                        <p className='tech-icon' key={i} >this is a tech icon</p>
                       ))}
                     </div>
                     <a href={project.github}>githubButton</a>
@@ -42,8 +41,8 @@ const MainContent = () => {
                   <p>image</p>
                 </div>
               ))}
-          </section>
-        </section>
+          </main>
+        
       </>
     )
 }

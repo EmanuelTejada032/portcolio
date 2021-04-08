@@ -17,13 +17,14 @@ class Navbar extends Component {
         return (
             <nav className='navbar'>  
                 <h1 className='navbar-logo'>Portfolio</h1>
-                {this.state.isOpen? <MdClose className='menu-icon' onClick={this.handleToggle} /> :
-                 <GiHamburgerMenu className='menu-icon' onClick={this.handleToggle} />}
+               
                 <ul className={this.state.isOpen? 'navbar-links show' : 'navbar-links'}>
                    {MenuItems.map( (item, id) => (
-                       <li className={this.state.isOpen? 'fade-in' : 'fade-out'} key={id}><a className={item.cName} href={item.url}>{item.title}</a></li>
+                       <li key={id}><a className="nav-link" href={item.url}>{item.title}</a></li>
                    ))}
                 </ul>
+                {this.state.isOpen? <MdClose className='menu-icon' onClick={this.handleToggle} /> :
+                 <GiHamburgerMenu className='menu-icon' onClick={this.handleToggle} />}
             </nav> 
         )
     }
