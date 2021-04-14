@@ -6,9 +6,88 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-img{
-    width: 50px;
-    height: 50px;
+body{
+    background-color: #f6f9fc;
 }
+
+/* Hero section */
+header{
+    min-height: 92vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*About Section */
+.about{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin: 0;
+}
+
+.about p{
+    max-width: 1200px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-height: 100vh;
+    background-color: white;
+    border-radius: 1em;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.skill{
+    width: 100px;
+    height: 100px;
+    flex-basis: 25%;
+    text-align: center;
+    padding: 1rem;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .skills{
+        min-height: 70vh;
+    }
+    .skill{
+        flex-basis: 33.33333%;
+
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .skills{
+        min-height: 70vh;
+    }
+    .skill{
+        flex-basis: 50%;
+
+    }
+}
+
 
 

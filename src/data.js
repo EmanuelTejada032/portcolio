@@ -10,40 +10,54 @@ const mongoDB = 'https://res.cloudinary.com/emanueltejada/image/upload/v16178445
 
 
 export const SvgLogos = [
-    {   name: 'Bootstrap logo',
-        url: bootstrap,
-    },
     {
-        name: 'Html5 logo',
+        name: 'HTML5',
+        alt: 'Html5 logo',
         url: html5
     },
     {
-        name: 'React logo',
-        url: react
+        name: 'CSS3',
+        alt: 'CSS3 UI logo',
+        url: css3
     },
-    {   name: 'Javascript logo',
+    {   
+        name: 'Javascript',
+        alt: 'Javascript logo',
         url: javascript
     },
-    {
-        name: 'Figma logo',
-        url: figma
+    {   
+        name: 'Bootstrap',
+        alt: 'Bootstrap logo',
+        url: bootstrap,
     },
     {
-        name: 'Mongo DB logo',
-        url: mongoDB
-    },
-    {
-        name: 'Node Js logo',
+        name: 'Node Js',
+        alt: 'Node Js logo',
         url: nodeJs
     },
     {
-        name: 'Material UI logo',
+        name: 'Mongo DB',
+        alt: 'Mongo DB logo',
+        url: mongoDB
+    },
+    
+    {
+        name: 'React',
+        alt: 'React logo',
+        url: react
+    },
+    {
+        name: 'Material UI',
+        alt: 'Material UI logo',
         url: materialUI
     },
     {
-        name: 'CSS3 UI logo',
-        url: css3
-    },   
+        name: 'Figma',
+        alt: 'Figma logo',
+        url: figma
+    },
+    
+       
 ]
 
 export const Projects = [
