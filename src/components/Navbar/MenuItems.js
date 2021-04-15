@@ -16,3 +16,15 @@ export const MenuItems = [
         url: '#'
     }
 ]
+
+export const  socialMedias = [
+    {
+        url: 'Linkedink'
+    },
+    {
+        url: 'Twitter'
+    },
+    {
+        url: 'Github'
+    }
+]

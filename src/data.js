@@ -3,7 +3,7 @@ const css3 = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617844514/
 const javascript = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617839889/Test/logo-javascript_ipm3za.svg'
 const bootstrap = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617833898/Test/bootstrap-4_lgpmht.svg'
 const react = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617833898/Test/react-2_z8tmub.svg'
-const figma = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617839889/Test/figma-1_ael2as.svg'
+// const figma = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617839889/Test/figma-1_ael2as.svg'
 const materialUI = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617839889/Test/material-ui-1_khpiqs.svg'
 const nodeJs = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617844514/Test/nodejs-icon_vpzqco.svg'
 const mongoDB = 'https://res.cloudinary.com/emanueltejada/image/upload/v1617844514/Test/mongodb-icon-1_yd86rk.svg'
@@ -51,11 +51,11 @@ export const SvgLogos = [
         alt: 'Material UI logo',
         url: materialUI
     },
-    {
-        name: 'Figma',
-        alt: 'Figma logo',
-        url: figma
-    },
+    // {
+    //     name: 'Figma',
+    //     alt: 'Figma logo',
+    //     url: figma
+    // },
     
        
 ]
@@ -63,50 +63,44 @@ export const SvgLogos = [
 export const Projects = [
     {
         title: 'Yelpcamp',
-        description: 'Some description not specified yet',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque quos corporis accusantium explicabo tenetur, mollitia optio in incidunt possimus!',
         usedTech: [
             html5,
             css3,
-            javascript
+            javascript,
+            mongoDB,
+            bootstrap,
+            nodeJs
         ],
-        image: 'imageurl',
+        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618423385/Test/Home_tir3yy.png',
         github: 'https://github.com/EmanuelTejada032',
         deployed: 'https://github.com/EmanuelTejada032'
     },
     {
         title: 'Shopping Cart',
-        description: 'Some description not specified yet',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque quos corporis accusantium explicabo tenetur, mollitia optio in incidunt possimus!',
         usedTech: [
             html5,
             css3,
-            javascript
+            javascript,
+            react,
+            materialUI,
+            
         ],
-        image: 'imageurl',
+        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618423385/Test/Home_tir3yy.png',
         github: 'https://github.com/EmanuelTejada032',
         deployed: 'https://github.com/EmanuelTejada032'
     },
     {
         title: 'FakeFlix',
-        description: 'Some description not specified yet',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque quos corporis accusantium explicabo tenetur, mollitia optio in incidunt possimus!',
         usedTech: [
             html5,
             css3,
             javascript
         ],
-        image: 'imageurl',
+        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618423385/Test/Home_tir3yy.png',
         github: 'https://github.com/EmanuelTejada032',
         deployed: 'https://github.com/EmanuelTejada032'
     }
-]
-
-export const  socialMedias = [
-    {
-        url: 'Linkedink'
-    },
-    {
-        url: 'Twitter'
-    },
-    {
-        url: 'Github'
-    },
 ]

@@ -1,6 +1,8 @@
 import React from 'react'
 import background from '../../img/herobgtest.jpg'
 import { SvgLogos, Projects } from '../../data'
+import { BiWorld } from 'react-icons/bi'
+import { AiFillGithub } from 'react-icons/ai'
 
 const MainContent = () => {
 
@@ -28,8 +30,9 @@ const MainContent = () => {
                    
           </section>
          </section>
-          <main className='projects'>   
+          <main>   
               <h2>Projects</h2>
+              <div className='projects'>
               {Projects.map( (project, i) => (
                 <div key={i} className='project'>
                   <div className='project-info'>
@@ -37,15 +40,19 @@ const MainContent = () => {
                     <p>{project.description}</p>
                     <div className='tech-icons'>
                       {project.usedTech.map((icon, i) =>(
-                        <p className='tech-icon' key={i} >this is a tech icon</p>
+                        <img className='tech-icon' src={icon} alt='tech icon'  key={i} />
                       ))}
                     </div>
-                    <a href={project.github}>githubButton</a>
-                    <a href={project.deployed}>deployedVersionButton</a>
+                    <div className='buttons'>
+                        <a href={project.github} rel="noreferrer" target='_blank' className='button'>Github <i><AiFillGithub /></i></a>
+                        <a href={project.deployed} rel="noreferrer" target='_blank' className='button'>Live <i><BiWorld /></i></a>
+                    </div>
+                   
                   </div>
-                  <p>image</p>
+                  <img src={project.image} alt={project.alt} className='project-image'/>
                 </div>
               ))}
+              </div>
           </main>
         
       </>
