@@ -73,8 +73,8 @@ export const Projects = [
             nodeJs
         ],
         image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618423385/Test/Home_tir3yy.png',
-        github: 'https://github.com/EmanuelTejada032',
-        deployed: 'https://github.com/EmanuelTejada032'
+        github: 'https://github.com/EmanuelTejada032/yelp',
+        deployed: 'https://protected-badlands-88004.herokuapp.com/'
     },
     {
         title: 'Shopping Cart',
@@ -87,9 +87,9 @@ export const Projects = [
             materialUI,
             
         ],
-        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618423385/Test/Home_tir3yy.png',
-        github: 'https://github.com/EmanuelTejada032',
-        deployed: 'https://github.com/EmanuelTejada032'
+        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618505015/Test/Screenshot_1_hhzfok.png',
+        github: 'https://github.com/EmanuelTejada032/commercejs',
+        deployed: 'https://simple-front-store.netlify.app/'
     },
     {
         title: 'FakeFlix',
@@ -99,8 +99,8 @@ export const Projects = [
             css3,
             javascript
         ],
-        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618423385/Test/Home_tir3yy.png',
-        github: 'https://github.com/EmanuelTejada032',
-        deployed: 'https://github.com/EmanuelTejada032'
+        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618505179/Test/Screenshot_2_ppirgk.png',
+        github: 'https://github.com/EmanuelTejada032/fakenetflix',
+        deployed: 'https://fakeflix-app.netlify.app/'
     }
 ]
