@@ -4,20 +4,14 @@ const Form = () => {
     return (
         <>
                 <form 
-      name="contact v1"
-      method="post"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-    >
-      <input type="hidden" name="form-name" value="contact v1" />
-
-      <div hidden>
-        <input name="bot-field" />
-      </div>
-
+                    name="contact-form"
+                    method="POST"
+                    data-netlify="true"
+                 >
+                     <input type="hidden" name="form-name" value="contact-form"/>
       <div>
         <label>Name<br />
-            <input type="text" name="first-name" />
+            <input type="text" name="name" />
         </label>
       </div>
 
@@ -28,7 +22,7 @@ const Form = () => {
 
       <div>
         <label>Your message<br />
-          <textarea name="comments"></textarea>
+          <textarea name="message"></textarea>
         </label>
       </div>
 
