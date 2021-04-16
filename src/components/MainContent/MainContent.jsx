@@ -3,6 +3,7 @@ import background from '../../img/herobgtest.jpg'
 import { SvgLogos, Projects } from '../../data'
 import { BiWorld } from 'react-icons/bi'
 import { AiFillGithub } from 'react-icons/ai'
+import Form from '../Form/Form'
 
 const MainContent = () => {
 
@@ -54,7 +55,12 @@ const MainContent = () => {
               ))}
               </div>
           </main>
-        
+
+          <section className="contact">
+            <h2>Get in touch</h2>
+            <Form />
+          </section>
+                        
       </>
     )
 }
