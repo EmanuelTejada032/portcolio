@@ -5,6 +5,7 @@ import { BiWorld } from 'react-icons/bi'
 import { AiFillGithub } from 'react-icons/ai'
 import Form from '../Form/Form'
 
+
 const MainContent = () => {
 
     return (
@@ -56,11 +57,10 @@ const MainContent = () => {
               </div>
           </main>
 
-          <section className="contact">
+          <section className='contact'>
             <h2>Get in touch</h2>
             <Form />
           </section>
-                        
       </>
     )
 }

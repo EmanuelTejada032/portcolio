@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { MenuItems } from './MenuItems'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdClose } from 'react-icons/md'
+import { Link, animateScroll as scroll} from "react-scroll";
 import './styles.css'
 
 class Navbar extends Component {
@@ -13,14 +14,24 @@ class Navbar extends Component {
        this.setState({ isOpen: !this.state.isOpen})
     }
 
+    scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     render(){
         return (
             <nav className='navbar'>  
-                <h1 className='navbar-logo'>Portfolio</h1>
+                <h1 className='navbar-logo' onClick={() => this.scrollToTop()}>Portfolio</h1>
                
                 <ul className={this.state.isOpen? 'navbar-links show' : 'navbar-links'}>
                    {MenuItems.map( (item, id) => (
-                       <li key={id}><a className="nav-link" href={item.url}>{item.title}</a></li>
+                       <li key={id} ><Link  spy={true}
+                       smooth={true}
+                       offset={item.url === 'about'? 1 : -120}
+                       duration={800} 
+                       activeClass='active' 
+                       to={item.url}
+                       onClick={this.handleToggle}>{item.title}</Link></li>
                    ))}
                 </ul>
                 {this.state.isOpen? <MdClose className='menu-icon' onClick={this.handleToggle} /> :

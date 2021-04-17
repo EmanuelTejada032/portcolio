@@ -7,10 +7,14 @@
     font-size: 1rem;
     color: white;
     background-color: blueviolet;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 h1{
     letter-spacing: 3px;
+    cursor: pointer;
 }
 
 .navbar-links{
@@ -31,10 +35,7 @@ h1{
     cursor: pointer;
 }
 
-.nav-link{
-    text-decoration: none;
-    color: white;
-}
+
 
 .menu-icon{
     font-size: 1.2rem;
@@ -52,6 +53,9 @@ h1{
 }
 
 @media screen and (max-width: 768px){
+    h2{
+        font-size: 1.5rem;
+    }
     .navbar-links{
         flex-direction: column;
         width: 100%;

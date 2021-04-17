@@ -1,19 +1,19 @@
 export const MenuItems = [
     {
         title: 'Projects',
-        url: '#'
+        url: 'projects'
     },
     {
         title: 'About',
-        url: '#'
+        url: 'about'
     },
     {
         title: 'Skills',
-        url: '#'
+        url: 'skills'
     },
     {
         title: 'Contact',
-        url: '#'
+        url: 'contact'
     }
 ]
 

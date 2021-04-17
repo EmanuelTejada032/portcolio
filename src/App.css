@@ -8,6 +8,7 @@
 
 body{
     background-color: #f6f9fc;
+    position: relative;
 }
 
 section{
@@ -25,11 +26,12 @@ a{
     background-color: white;
     -webkit-box-shadow: -2px 7px 18px 1px rgba(0,0,0,0.07); 
     box-shadow: -2px 7px 18px 1px rgba(0,0,0,0.07);
+    cursor: pointer;
 }
 
 /* Hero section */
 header{
-    min-height: 92vh;
+    min-height: 100vh;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -150,10 +152,13 @@ h2{
 .contact{
     max-width: 1200px;
     width: 60%;
-    margin: 0 auto;
+    margin: auto;
     height: 100vh;
     position: relative;
+    margin-bottom: 2rem;
+    z-index: -1;
 }
+
 
 
 @media screen and (max-width: 768px) {
