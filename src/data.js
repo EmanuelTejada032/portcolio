@@ -89,7 +89,7 @@ export const Projects = [
         ],
         image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618505015/Test/Screenshot_1_hhzfok.png',
         github: 'https://github.com/EmanuelTejada032/commercejs',
-        deployed: 'https://simple-front-store.netlify.app/'
+        deployed: 'https://commercejs-shopping-cart.netlify.app/'
     },
     {
         title: 'FakeFlix',
@@ -99,8 +99,8 @@ export const Projects = [
             css3,
             javascript
         ],
-        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618505179/Test/Screenshot_2_ppirgk.png',
+        image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1620008691/Test/WhatsApp_Image_2021-05-02_at_10.21.40_PM_bo0srd.jpg',
         github: 'https://github.com/EmanuelTejada032/fakenetflix',
-        deployed: 'https://fakeflix-app.netlify.app/'
+        deployed: 'https://fake-flix.netlify.app/'
     }
 ]
