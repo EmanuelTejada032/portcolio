@@ -17,7 +17,7 @@ const MainContent = () => {
         <section>
           <section className='about'>
           <h2>About Me</h2>
-          <p>Hi! My name is Emanuel and I'm currently a software developer graduated from the ITSC, I'm also a self taugth web     developer. I'd like to say learning to code has been dificult a journey, however I keep putting effort and dedicating time every day learning new skills  and improving what I already kno to bring value to any future employer or customer that I could have. Even if it's difficult learning to code, I belive in my habilities to learn and keep going this road much further</p>
+          <p>Hi! My name is Emanuel and I'm currently a software developer graduated from the ITSC, I'm also a self taugth web developer. I'd like to say learning to code has been a dififult journey, however I keep putting effort and time every day learning new skills  and improving what I already know to bring value to any future employer or customer that I could have. Even if it's difficult, I belive in my habilities to learn and keep going this road much further</p>
           </section>
           <section>
                 <h2>Skills</h2>

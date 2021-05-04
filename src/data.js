@@ -63,7 +63,7 @@ export const SvgLogos = [
 export const Projects = [
     {
         title: 'Yelpcamp',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque quos corporis accusantium explicabo tenetur, mollitia optio in incidunt possimus!',
+        description: 'This is an application from a udemy course that teach fundamentals of Node.js, Express and Mongodb, on top of the course content I added some features like user roles, search functionality, simple profile page, favorite section and more details.',
         usedTech: [
             html5,
             css3,
@@ -78,7 +78,7 @@ export const Projects = [
     },
     {
         title: 'Shopping Cart',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque quos corporis accusantium explicabo tenetur, mollitia optio in incidunt possimus!',
+        description: 'I recreated a simple front-end for e-commerce to learn about React and Material UI, This app is using a third party API called commerce js to fetch products and other functionality without the need of a complex backend',
         usedTech: [
             html5,
             css3,
@@ -93,11 +93,12 @@ export const Projects = [
     },
     {
         title: 'FakeFlix',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam cumque quos corporis accusantium explicabo tenetur, mollitia optio in incidunt possimus!',
+        description: 'In the process of learning React I\'ve built a simple movie application with react fetching posters and other information about movies and tv shows from themoviedb.',
         usedTech: [
             html5,
             css3,
-            javascript
+            javascript,
+            react
         ],
         image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1620008691/Test/WhatsApp_Image_2021-05-02_at_10.21.40_PM_bo0srd.jpg',
         github: 'https://github.com/EmanuelTejada032/fakenetflix',
