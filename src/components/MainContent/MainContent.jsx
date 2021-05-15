@@ -1,9 +1,9 @@
 import React from 'react'
 import background from '../../img/herobgtest.jpg'
 import { SvgLogos, Projects } from '../../data'
-import { BiWorld } from 'react-icons/bi'
-import { AiFillGithub } from 'react-icons/ai'
+import { FiGithub, FiExternalLink } from 'react-icons/fi'
 import Form from '../Form/Form'
+
 
 
 const MainContent = () => {
@@ -46,8 +46,8 @@ const MainContent = () => {
                       ))}
                     </div>
                     <div className='buttons'>
-                        <a href={project.github} rel="noreferrer" target='_blank' className='button'>Github <i><AiFillGithub /></i></a>
-                        <a href={project.deployed} rel="noreferrer" target='_blank' className='button'>Live <i><BiWorld /></i></a>
+                        <a href={project.github} rel="noreferrer" target='_blank' className='button'>Github <i><FiGithub /></i></a>
+                        <a href={project.deployed} rel="noreferrer" target='_blank' className='button'>Live <i><FiExternalLink /></i></a>
                     </div>
                    
                   </div>
@@ -61,6 +61,7 @@ const MainContent = () => {
             <h2>Get in touch</h2>
             <Form />
           </section>
+
       </>
     )
 }

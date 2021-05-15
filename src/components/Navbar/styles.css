@@ -1,15 +1,25 @@
+:root{
+    --primaryColor: #1D3557;
+    --primaryOffset: #254574;
+    --secondaryColor: #457B9D;
+    --tertiaryColor: #A8DADC;
+    --white: #fff;
+}
 
 .navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    font-size: 1rem;
-    color: white;
-    background-color: blueviolet;
     position: fixed;
     left: 0;
     right: 0;
+}
+
+.navbar-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    color: white;
+    background-color: var(--primaryColor);
+    padding: 0 3rem;
 }
 
 h1{
@@ -20,29 +30,42 @@ h1{
 .navbar-links{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     list-style: none;
+    font-size: .82rem;
     width: 30%;
 }
 
-.navbar-links li{
-    padding: .7rem 1rem;
-}
-.navbar-links li:hover{
-    border-radius: 5%;
-    background-color: rgba(0, 0, 0, 0.2);
+.navbar-links li {
+    position: relative;
+    padding: .5rem 1rem;
     cursor: pointer;
 }
+.navbar-links li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--tertiaryColor);
+    border-radius: 35px;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
 
-
+.navbar-links li:hover::after{
+    transform: scale(1, 1);
+}
 
 .menu-icon{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: white;
     display: none;
     cursor: pointer; 
-    width: 40%; 
+    width: 22px;
+    z-index: 4;
 }
 
 
@@ -53,32 +76,36 @@ h1{
 }
 
 @media screen and (max-width: 768px){
-    h2{
-        font-size: 1.5rem;
-    }
     .navbar-links{
         flex-direction: column;
-        width: 100%;
+        width: 60%;
         text-align: center;
         justify-content: space-around;
-        height: 0;
-        overflow: hidden;
+        height: 100vh;
+        font-size: 1.1rem;
+        font-weight: lighter;
+        padding: 1rem 0;
+        top: 0;
+        right: 0;
         position: absolute;
-        top: 8vh;
-        background-color: blueviolet;
-        transition: all 0.5s ease;
-        z-index: 4;
+        background-color: var(--primaryOffset);
+        transition: all 0.3s ease;
+        z-index: 3;
+        transform: translateX(100%);
     }
     .show{
-        height: 50vh;
+        transform: translateX(0);
     }
     
     .menu-icon{
-        display: block;
-        padding-left: 30%;
+        display: inline-block;
+        width: 22px;
     }
-    
-    
+    .menu-icon.close{
+        border: 1px dotted white;
+        width: 25px;
+        height: 25px;
+    }
 }
 
 

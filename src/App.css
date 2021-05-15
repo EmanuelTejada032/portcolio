@@ -95,6 +95,7 @@ h2{
 .projects{
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 5rem;
 }
 .project{
     display: flex;

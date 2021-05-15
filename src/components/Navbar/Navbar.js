@@ -20,22 +20,24 @@ class Navbar extends Component {
 
     render(){
         return (
-            <nav className='navbar'>  
-                <h1 className='navbar-logo' onClick={() => this.scrollToTop()}>Portfolio</h1>
-               
-                <ul className={this.state.isOpen? 'navbar-links show' : 'navbar-links'}>
-                   {MenuItems.map( (item, id) => (
-                       <li key={id} ><Link  spy={true}
-                       smooth={true}
-                       offset={item.url === 'about'? 1 : -120}
-                       duration={800} 
-                       activeClass='active' 
-                       to={item.url}
-                       onClick={this.handleToggle}>{item.title}</Link></li>
-                   ))}
-                </ul>
-                {this.state.isOpen? <MdClose className='menu-icon' onClick={this.handleToggle} /> :
-                 <GiHamburgerMenu className='menu-icon' onClick={this.handleToggle} />}
+            <nav className='navbar'>
+                <div className='navbar-center'>
+                    <h1 className='navbar-logo' onClick={() => this.scrollToTop()}>Portfolio</h1>
+                    <ul className={this.state.isOpen? 'navbar-links show' : 'navbar-links'}>
+                    {MenuItems.map( (item, id) => (
+                        <li key={id} ><Link  spy={true}
+                        smooth={true}
+                        offset={item.url === 'about'? 1 : -135}
+                        duration={800} 
+                        activeClass='active' 
+                        to={item.url}
+                        onClick={this.handleToggle}>{item.title}</Link></li>
+                    ))}
+                    </ul>
+                    {this.state.isOpen? <MdClose className='menu-icon close' onClick={this.handleToggle} /> :
+                    <GiHamburgerMenu className='menu-icon' onClick={this.handleToggle} />}
+                </div> 
+                
             </nav> 
         )
     }
