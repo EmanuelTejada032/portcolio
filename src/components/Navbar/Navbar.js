@@ -27,7 +27,7 @@ class Navbar extends Component {
                     {MenuItems.map( (item, id) => (
                         <li key={id} ><Link  spy={true}
                         smooth={true}
-                        offset={item.url === 'about'? 1 : -135}
+                        offset={item.url === 'about'? 1 : -150}
                         duration={800} 
                         activeClass='active' 
                         to={item.url}

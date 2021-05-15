@@ -1,18 +1,33 @@
 import React from 'react'
-import background from '../../img/herobgtest.jpg'
+import { Link } from 'react-scroll'
 import { SvgLogos, Projects } from '../../data'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 import Form from '../Form/Form'
-
+import {socialMedias} from '../../data'
 
 
 const MainContent = () => {
 
     return (
       <>
-        <header className="overlay" style={{backgroundImage: `url(${background})`, backgroundPosition: 'center'}}>
-            <h2>I'm Emanuel Tejada</h2>
-            <h4>Web developer</h4>
+        <header className="hero">
+            <ul className='hero-links'>
+              {socialMedias.map((socialMedia, i) => (
+                <li key={i}><a href={socialMedia.url} className='test'>{socialMedia.icon}</a></li>
+              ))}
+            </ul>
+            <div className='main-hero'>
+              <p>My name is</p>
+              <h2>Emanuel Tejada</h2>
+              <h4>Web developer</h4>
+              <Link spy={true}
+                    smooth={true}
+                    offset={-135}
+                    duration={1000} 
+                    activeClass='active' 
+                    to='contact'
+                    className='hero-btn'>Get in touch</Link>
+            </div>
         </header>
         <section>
           <section className='about'>
