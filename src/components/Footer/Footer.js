@@ -1,20 +1,14 @@
 import React from 'react'
-import { MenuItems } from '../Navbar/MenuItems'
-import { Link} from "react-scroll";
+import { socialMedias } from '../../data'
 import './styles.css'
 
 const Footer = () => {
     
     return (
         <div className='footer'>
-                <ul>
-                   {MenuItems.map( (item, id) => (
-                       <li key={id} ><Link  spy={true}
-                       smooth={true}
-                       offset={item.url === 'about'? 1 : -120}
-                       duration={800} 
-                       activeClass='active' 
-                       to={item.url}>{item.title}</Link></li>
+                <ul className='footer-links'>
+                   {socialMedias.map((socialMedia, i) => (
+                    <li key={i}><a href={socialMedia.url} target='_blank' rel="noreferrer">{socialMedia.icon}</a></li>
                    ))}
                 </ul>
         </div>
