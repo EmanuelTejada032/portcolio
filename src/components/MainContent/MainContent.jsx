@@ -46,9 +46,9 @@ const MainContent = () => {
                 </div>      
           </div>
          </section>
-          <main>   
-              <h2>Projects</h2>
-              <div className='projects'>
+          <main className='projects'>   
+              <h2 className='projects-title'>Projects</h2>
+              <div className='projects-container'>
               {Projects.map( (project, i) => (
                 <div key={i} className='project'>
                   <div className='project-info'>
@@ -59,9 +59,13 @@ const MainContent = () => {
                         <img className='tech-icon' src={icon} alt='tech icon'  key={i} />
                       ))}
                     </div>
-                    <div className='buttons'>
-                        <a href={project.github} rel="noreferrer" target='_blank' className='button'>Github <i><FiGithub /></i></a>
-                        <a href={project.deployed} rel="noreferrer" target='_blank' className='button'>Live <i><FiExternalLink /></i></a>
+                    <div className='project-buttons'>
+                        <div>
+                          <a href={project.github} rel="noreferrer" target='_blank' className='project-button'>Github</a><FiGithub />
+                        </div>
+                        <div>
+                          <a href={project.deployed} rel="noreferrer" target='_blank' className='project-button'>Live</a><FiExternalLink />
+                        </div>
                     </div>
                    
                   </div>

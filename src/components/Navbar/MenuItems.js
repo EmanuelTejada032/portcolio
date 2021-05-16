@@ -4,10 +4,6 @@ export const MenuItems = [
         url: 'about'
     },
     {
-        title: 'Skills',
-        url: 'skills'
-    },
-    {
         title: 'Projects',
         url: 'projects'
     },
