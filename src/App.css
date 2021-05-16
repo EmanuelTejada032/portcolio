@@ -139,7 +139,8 @@ body{
     margin: 0 10rem;
 }
 
-.projects h2{
+.projects h2,
+.contact h2{
     font-weight: lighter;
     font-size: 2rem;
     padding: 1rem 0; 
@@ -222,13 +223,11 @@ body{
 /* Contact section */
 .contact{
     max-width: var(--MaxWidth);
-    width: 60%;
-    margin: auto;
-    height: 100vh;
-    position: relative;
-    margin-bottom: 2rem;
-    z-index: -1;
+    margin: 0 10rem;
+    min-height: 100vh;
+    padding: 3rem 3.2rem 0 3.2em;
 }
+
 
 
 

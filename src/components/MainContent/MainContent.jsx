@@ -76,7 +76,7 @@ const MainContent = () => {
           </main>
 
           <section className='contact'>
-            <h2>Get in touch</h2>
+            <h2 >Get in touch</h2>
             <Form />
           </section>
 
