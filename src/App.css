@@ -12,19 +12,12 @@
     --secondaryColor: #457B9D;
     --tertiaryColor: #A8DADC;
     --white: #fff;
+    --MaxWidth: 1500px;
 }
 
 body{
-    background-color: #f6f9fc;
+    background-color: var(--white);
     position: relative;
-}
-
-section{
-    margin-bottom: 3rem;
-}
-
-a{
-    text-decoration: none;
 }
 
 .button{
@@ -39,19 +32,17 @@ a{
 
 /* Hero section */
 .hero{
-    position: relative;
-    top: 10vh;
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
-    max-width: 1768px;
+    max-width: var(--MaxWidth);
     display: flex;
     background-color: var(--primaryColor);
     color: white;
-    padding: 0 3.2rem;
+    padding: 3rem 3.2rem 0 3.2em;
 }
 .main-hero{
     width: 100%;
-    padding: 3rem 150px;
+    padding: 6rem 5rem;
 }
 .main-hero p {
     font-weight: lighter;
@@ -87,7 +78,7 @@ a{
     align-self: flex-end;
     list-style: none;
     font-size: 1.5rem;
-    height: 200px;
+    min-height: 200px;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
@@ -104,61 +95,57 @@ a{
 }
 
 /*About Section */
+
+/*About content */
 .about{
     display: flex;
-    min-height: 100vh;
-    justify-content: center;
+    min-height: 90vh;
+    margin: 0 10rem;
+    max-width: var(--MaxWidth);
     align-items: center;
-    flex-direction: column;
-    padding: 2rem;
+    justify-content: space-between;
 }
 
-main h2,
-section h2{
-    text-align: center;
-    font-size: 2em;
-    font-weight: 400;
-    padding: 1em;
-    margin-bottom: 1em;
-    margin: 0;
+.about h2{
+    font-weight: lighter;
+    font-size: 2rem;
+    padding: 1rem 0; 
+}
+.about-text p {
+    line-height: 1.5;
 }
 
-.about p{
-    max-width: 800px;
-    width: 95%;
-    text-align: justify;
-    text-justify: inter-word;
+.about-text,
+.about-skills{
+    width: 45%;
+    padding: 2rem 0;
+    min-height: 400px;
 }
 
-/* Skills section */
-.skills{
+.about-skills h2{
+    padding: 1rem 1.5rem;
+}
+
+.skills-container{
     display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    max-width: 1200px;
-    min-height: 100vh;
-    background-color: white;
-    border-radius: 1em;
-    margin: 0 auto;
-    padding: 2em;
+    height: 180px;
 }
-
 .skill{
-    width: 100px;
-    height: 100px;
     flex-basis: 25%;
-    text-align: center;
-    padding: 1rem;
+    margin:.5rem 0;
+    text-align: center; 
 }
 
 .skill img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
+
 
 /* Project section */
 .projects{
-    max-width: 1200px;
+    max-width: var(--MaxWidth);
     margin: 0 auto;
     margin-bottom: 5rem;
 }
@@ -171,7 +158,7 @@ section h2{
     border-radius: 1em;
     padding: 2em;
     width: 95%;
-    max-width: 1300px;
+    max-width: var(--MaxWidth);
 }
 
 .project-info{
@@ -216,7 +203,7 @@ section h2{
 
 /* Contact section */
 .contact{
-    max-width: 1200px;
+    max-width: var(--MaxWidth);
     width: 60%;
     margin: auto;
     height: 100vh;

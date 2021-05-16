@@ -13,7 +13,7 @@ const MainContent = () => {
         <header className="hero">
             <ul className='hero-links'>
               {socialMedias.map((socialMedia, i) => (
-                <li key={i}><a href={socialMedia.url} className='test'>{socialMedia.icon}</a></li>
+                <li key={i}><a href={socialMedia.url} target='_blank' rel="noreferrer" className='test'>{socialMedia.icon}</a></li>
               ))}
             </ul>
             <div className='main-hero'>
@@ -29,23 +29,22 @@ const MainContent = () => {
                     className='hero-btn'>Get in touch</Link>
             </div>
         </header>
-        <section>
-          <section className='about'>
-          <h2>About Me</h2>
-          <p>Hi! My name is Emanuel and I'm currently a software developer graduated from the ITSC, I'm also a self taugth web developer. I'd like to say learning to code has been a dififult journey, however I keep putting effort and time every day learning new skills  and improving what I already know to bring value to any future employer or customer that I could have. Even if it's difficult, I belive in my habilities to learn and keep going this road much further</p>
-          </section>
-          <section>
+        <section className='about'>
+          <div className='about-text'>
+            <h2>About Me</h2>
+            <p>Hi! My name is Emanuel and I'm currently a software developer graduated from the ITSC, I'm also a self taugth web developer. I'd like to say learning to code has been a dififult journey, however I keep putting effort and time every day learning new skills  and improving what I already know to bring value to any future employer or customer that I could have. Even if it's difficult, I belive in my habilities to learn and keep going this road much further</p>
+          </div>
+          <div className='about-skills'>
                 <h2>Skills</h2>
-                <div className='skills'>
+                <div className='skills-container'>
                   {SvgLogos.map( (logo, i) => (
                      <div key={i} className='skill'>
                        <img  src={logo.url} alt={logo.alt} />
-                       <h4>{logo.name}</h4>
+                       <p>{logo.name}</p>
                      </div>  
                    ))}
-                </div>
-                   
-          </section>
+                </div>      
+          </div>
          </section>
           <main>   
               <h2>Projects</h2>

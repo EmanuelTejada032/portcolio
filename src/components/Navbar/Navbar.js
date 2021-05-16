@@ -22,12 +22,12 @@ class Navbar extends Component {
         return (
             <nav className='navbar'>
                 <div className='navbar-center'>
-                    <h1 className='navbar-logo' onClick={() => this.scrollToTop()}>Portfolio</h1>
+                    <h1 className='navbar-logo' onClick={() => this.scrollToTop()}>Port</h1>
                     <ul className={this.state.isOpen? 'navbar-links show' : 'navbar-links'}>
                     {MenuItems.map( (item, id) => (
                         <li key={id} ><Link  spy={true}
                         smooth={true}
-                        offset={item.url === 'about'? 1 : -150}
+                        offset={item.url === 'about'? -80 : -150}
                         duration={800} 
                         activeClass='active' 
                         to={item.url}
