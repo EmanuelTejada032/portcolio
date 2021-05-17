@@ -20,13 +20,13 @@
 }
 
 .form-button{
-    display: inline-block;
+    display: block;
     letter-spacing: 2px;
     padding: .8rem 4.3rem;
     background-color: var(--primaryColor) ;
     color: white;
     cursor: pointer;
-    margin: 0 18.75rem;
+    margin: 0 auto;
 } 
 
 input {
@@ -53,9 +53,8 @@ textarea {
     outline: none;
   }
 
-  @media screen and (max-width: 1200px){
-    .form-button{
-        margin: 0 15.90rem;
-        padding: .8rem 4rem;
+  @media screen and (max-width: 992px){
+    .sender-info{
+        flex-direction: column;
     }
   }

@@ -149,13 +149,14 @@ body{
     font-size: 2rem;
     padding: 1rem 0; 
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .project{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 2rem 2rem;
+    padding: 2rem;
     margin-bottom: 3rem;
     background-color: var(--tertiaryColor);
     max-width: 1030px;
@@ -265,6 +266,90 @@ body{
 
 }
 
+@media screen and (max-width: 992px){
+    .about h2, 
+    .projects h4{
+        text-align: center;
+    }
+    
+    /* Hero */
+    .hero{
+       padding-top: 5rem;
+    }
+    .main-hero{
+        padding: 4rem 3rem ;
+    } 
+    .main-hero p{
+        font-size: 1rem;
+    }
+
+    .main-hero h2{
+        font-size: 3.8rem;
+    }
+    .main-hero h4{
+        font-size: 3.6rem;
+    }
+
+    .hero-btn{
+        font-size: .9rem;
+    }
+
+    /* About */
+    .projects,
+    .about{
+        flex-direction: column;
+        margin: 0 8rem;
+        padding: 2rem 0;
+    }
+    .about-text,
+    .about-skills{
+        min-height: fit-content;
+        width: 100%;
+        padding: 0;
+    }
+    .about-skills h2{
+        padding: 1rem 0;
+    }
+
+    .skills-container{
+        width: 105%;
+        position: relative;
+        left: -5%;
+    }
+
+    /* projects */
+    .project{
+        flex-direction: column;
+        padding: 1rem ;
+        min-height: 500px;
+        justify-content: initial;
+    }
+    .project-image{
+        order: -1;
+        width: 90%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .project-info{
+        height:  250px;
+        flex-basis: initial;
+        padding-top: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .project-info h4{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    /* contact */
+    .contact {
+        font-size: .9rem;
+    }
+    
+}
 
 
 
