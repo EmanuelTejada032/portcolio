@@ -8,7 +8,6 @@
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    margin-top: 1rem;
 }
 .sender-info{
     display: flex;
@@ -54,9 +53,9 @@ textarea {
     outline: none;
   }
 
-  @media screen and (max-width: 524px){
+  @media screen and (max-width: 1200px){
     .form-button{
-        width: 100%;
-        left: 0;
+        margin: 0 15.90rem;
+        padding: .8rem 4rem;
     }
   }

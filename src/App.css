@@ -18,6 +18,7 @@
 body{
     background-color: var(--white);
     position: relative;
+    overflow-x: hidden;
 }
 
 /* Hero section */
@@ -87,6 +88,7 @@ body{
 /*About Section */
 
 /*About content */
+
 .about{
     display: flex;
     min-height: 90vh;
@@ -103,6 +105,8 @@ body{
 }
 .about-text p {
     line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-text,
@@ -229,44 +233,38 @@ body{
 }
 
 
-
-
-@media screen and (max-width: 768px) {
-    .project{
-        flex-direction: column-reverse;
-    }
-    .project-info{
-        flex-basis: 100%;
-    }
-    .project-image{
-        width: 100%;
-        height: 300px;
-    }
-    .skills{
-        min-height: 70vh;
-    }
-    .skill{
-        flex-basis: 33.33333%;
-
-    }
-    header{
-        min-height: 60vh;
-        font-size: .9em;
-    }
+@media screen and (max-width:1200px) {
+    /*About */
     .about{
-        min-height: 60vh;
+        margin: 0 5rem;
     }
+    .about-skills h2{
+        padding: 1rem 1.1rem;
+    }
+
+    .about p {
+        font-size: .95rem;
+    }
+
+    .skill p {
+        text-align: center;
+    }
+
+    /* projects */
+    .projects{
+        margin: 0 5rem;
+    }
+    .project-info {
+        font-size: .95rem;
+    }
+
+    /* Contact*/
+    .contact{
+        margin: 0 5rem;
+    }
+
 }
 
-@media screen and (max-width: 524px) {
-    .skills{
-        min-height: 70vh;
-    }
-    .skill{
-        flex-basis: 50%;
-
-    }
-}
 
 
 
