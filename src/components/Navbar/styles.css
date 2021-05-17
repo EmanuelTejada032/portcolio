@@ -25,11 +25,12 @@
     z-index: 10;
 }
 
-h1{
-    letter-spacing: 3px;
-    cursor: pointer;
+.navbar-logo{
+    width: 8vh;
+    height: 8vh;
+    position: relative;
+    left: -12px;
 }
-
 .navbar-links{
     display:flex;
     align-items: center;
@@ -109,6 +110,10 @@ h1{
         border: 1px dotted white;
         width: 25px;
         height: 25px;
+    }
+
+    .navbar-logo{
+        left: -6px;
     }
 } 
 

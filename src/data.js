@@ -90,7 +90,7 @@ export const Projects = [
     },
     {
         title: 'FakeFlix',
-        description: 'In the process of learning React I\'ve built a simple movie application with react fetching posters and other information about movies and tv shows from themoviedb.',
+        description: 'In the process of learning react, I\'ve built a simple movie application with react fetching posters and other information about movies and tv shows from themoviedb API.',
         usedTech: [
             html5,
             css3,

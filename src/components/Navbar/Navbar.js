@@ -22,7 +22,7 @@ class Navbar extends Component {
         return (
             <nav className='navbar'>
                 <div className='navbar-center'>
-                    <h1 className='navbar-logo' onClick={() => this.scrollToTop()}>Port</h1>
+                 <img src='https://res.cloudinary.com/emanueltejada/image/upload/v1621292626/Test/Logo_Ema_light_blue_ttlx1m.svg' className='navbar-logo' onClick={() => this.scrollToTop()} alt='logo' />
                     <ul className={this.state.isOpen? 'navbar-links show' : 'navbar-links'}>
                     {MenuItems.map( (item, id) => (
                         <li key={id} ><Link  spy={true}

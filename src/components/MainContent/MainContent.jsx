@@ -32,7 +32,7 @@ const MainContent = () => {
         <section className='about'>
           <div className='about-text'>
             <h2>About Me</h2>
-            <p>Hi! My name is Emanuel and I'm currently a software developer graduated from the ITSC, I'm also a self taugth web developer. I'd like to say learning to code has been a dififult journey, however I keep putting effort and time every day learning new skills  and improving what I already know to bring value to any future employer or customer that I could have. Even if it's difficult, I belive in my habilities to learn and keep going this road much further</p>
+            <p>Hi! My name is Emanuel and I'm currently a software developer graduated from the ITSC, I'm also a self taugth web developer. I'd like to say learning to code has been a dififult journey, however I keep putting effort and time every day learning new skills  and improving what I already know to bring value to any future employer or customer I could have. Even if it's difficult, I belive in my habilities to learn and keep going this road much further</p>
           </div>
           <div className='about-skills'>
                 <h2>Skills</h2>
