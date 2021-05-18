@@ -105,6 +105,7 @@ body{
     max-width: var(--MaxWidth);
     align-items: center;
     justify-content: space-between;
+    padding: 7rem 0;
 }
 
 .about h2{
@@ -154,6 +155,7 @@ body{
 .projects{
     max-width: var(--MaxWidth);
     margin: 0 10rem;
+    padding-bottom: 7rem;
 }
 
 .projects h2,
@@ -246,6 +248,7 @@ body{
     max-width: var(--MaxWidth);
     margin: 0 10rem;
     min-height: 100vh;
+    padding-bottom: 7rem ;
 }
 
 
@@ -378,7 +381,13 @@ body{
     .contact{
         flex-direction: column;
         margin: 0 3rem;
-        padding: 1rem 0;
+    }
+    .about{
+        padding: 2rem 0;
+    }
+    .projects,
+    .contact{
+        padding-bottom: 3.8rem;
     }
 
     /* Hero */
@@ -416,6 +425,9 @@ body{
         font-size: 1.8rem;
     }
 
+    .about-text{
+        margin-bottom: 1.5rem;
+    }
     /* Projects */
     .project {
         justify-content: start;

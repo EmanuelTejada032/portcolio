@@ -100,9 +100,9 @@
     }
     .navbar-links{
         flex-direction: column;
-        width: 55%;
+        width: 65%;
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: center;
         justify-items: center;
         height: 100vh;
         font-size: 1.1rem;
@@ -118,6 +118,7 @@
     }
     .navbar-links li {
         margin-left: 0;
+        margin-bottom: 3rem;
     }
     .show{
         transform: translateX(0);

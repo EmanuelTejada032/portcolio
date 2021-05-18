@@ -60,7 +60,7 @@ export const SvgLogos = [
 export const Projects = [
     {
         title: 'Yelpcamp',
-        description: 'This is an application from a udemy course that teach fundamentals of Node.js, Express and Mongodb, on top of the course content I added some features like user roles, search functionality, simple profile page, favorite section and more details.',
+        description: 'This is an application built into the web developer bootcamp from udemy, the course teach fundamentals about Node.js, Express and Mongodb, on top of the course content I added some features like user roles, search functionality, simple profile page, favorite section and more details.',
         usedTech: [
             html5,
             css3,
