@@ -10,7 +10,7 @@ The color pallete I used was the folowing from [Coolors.co](https://coolors.co/p
 ![Color pallete](https://res.cloudinary.com/emanueltejada/image/upload/v1621296974/Test/color_pallete_jpvhfd.png)
 
 
-You can see the live site here: [Emanuel Tejada](https://emanuel-tejada.netlify.app/)
+You can see the live site here: [Emanuel Tejada](https://emanueltejada.site/)
 You can also clone this repository or download the code and run it locally
 
 Once you've downloaded or cloned the repository, run the following command on your terminal inside the project
