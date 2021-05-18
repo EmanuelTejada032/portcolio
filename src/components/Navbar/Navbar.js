@@ -3,6 +3,7 @@ import { MenuItems } from './MenuItems'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdClose } from 'react-icons/md'
 import { Link, animateScroll as scroll} from "react-scroll";
+import resume from '../../files/resume.pdf'
 import './styles.css'
 
 class Navbar extends Component {
@@ -33,6 +34,7 @@ class Navbar extends Component {
                         to={item.url}
                         onClick={this.handleToggle}>{item.title}</Link></li>
                     ))}
+                        <li className='resume-btn'><a href={resume} target='_blank' rel="noreferrer">Resume</a></li>
                     </ul>
                     {this.state.isOpen? <MdClose className='menu-icon close' onClick={this.handleToggle} /> :
                     <GiHamburgerMenu className='menu-icon' onClick={this.handleToggle} />}

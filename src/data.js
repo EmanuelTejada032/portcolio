@@ -71,7 +71,8 @@ export const Projects = [
         ],
         image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618423385/Test/Home_tir3yy.png',
         github: 'https://github.com/EmanuelTejada032/yelp',
-        deployed: 'https://protected-badlands-88004.herokuapp.com/'
+        deployed: 'https://protected-badlands-88004.herokuapp.com/',
+        fade: 'fade-right'
     },
     {
         title: 'Shopping Cart',
@@ -86,7 +87,8 @@ export const Projects = [
         ],
         image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1618505015/Test/Screenshot_1_hhzfok.png',
         github: 'https://github.com/EmanuelTejada032/commercejs',
-        deployed: 'https://commercejs-shopping-cart.netlify.app/'
+        deployed: 'https://shopping-cart.emanueltejada.site/',
+        fade: 'fade-left'
     },
     {
         title: 'FakeFlix',
@@ -99,7 +101,8 @@ export const Projects = [
         ],
         image: 'https://res.cloudinary.com/emanueltejada/image/upload/v1620008691/Test/WhatsApp_Image_2021-05-02_at_10.21.40_PM_bo0srd.jpg',
         github: 'https://github.com/EmanuelTejada032/fakeflix',
-        deployed: 'https://fake-flix.netlify.app/'
+        deployed: 'https://fakeflix.emanueltejada.site/',
+        fade: 'fade-right'
     }
 ]
 

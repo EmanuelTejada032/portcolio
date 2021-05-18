@@ -16,7 +16,7 @@ const MainContent = () => {
                 <li key={i}><a href={socialMedia.url} target='_blank' rel="noreferrer" className='test'>{socialMedia.icon}</a></li>
               ))}
             </ul>
-            <div className='main-hero'>
+            <div className='main-hero' data-aos='fade-right' data-aos-duration='2000' >
               <p>My name is</p>
               <h2>Emanuel Tejada</h2>
               <h4>Web developer</h4>
@@ -50,7 +50,7 @@ const MainContent = () => {
               <h2 className='projects-title'>Projects</h2>
               <div className='projects-container'>
               {Projects.map( (project, i) => (
-                <div key={i} className='project'>
+                <div key={i} className='project' data-aos={project.fade} data-aos-duration='1000'>
                   <div className='project-info'>
                     <h4>{project.title}</h4>
                     <p>{project.description}</p>
