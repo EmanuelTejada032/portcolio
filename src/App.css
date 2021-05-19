@@ -486,4 +486,25 @@ body{
 }
 
 
+@media screen and (max-width: 340px){
+    html{
+        font-size: 13px;
+    }
+    .main-hero h2{
+        font-size: 1.8rem;
+        padding: .5rem 0;
+    }
 
+    .main-hero h4{
+        font-size: 1.7rem;
+    }
+
+    .project-info{
+        justify-content: space-evenly;
+    }
+    .tech-icon{
+        width: 22px;
+        height: 22px;
+        margin: 4px;
+    }
+}

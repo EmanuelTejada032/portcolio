@@ -53,7 +53,10 @@ textarea {
     resize: none;
     outline: none;
   }
+  
 
+
+  
   @media screen and (max-width: 992px){
     .sender-info{
         flex-direction: column;
